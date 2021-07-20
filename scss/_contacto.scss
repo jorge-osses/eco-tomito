@@ -1,0 +1,74 @@
+.contenidoAside {
+    @include sticky(sticky);
+    h4 {
+        text-align: center;
+    }
+    ul {
+        list-style-position: inside;
+        margin-top: 30px;
+        a {
+            @include aside;
+            font-size: 2rem;
+        }
+    }
+}
+.formularioContacto{
+    margin-top: 50px;
+    padding: 100px 100px 50px 100px;
+    font-size: 14pt;
+    font-family: 'Roboto Condensed', sans-serif;
+    fieldset{
+        border: 5px solid;
+        legend{
+            font-size: 24px;
+            text-align: center;
+        }
+        form {
+            font-family: 'Roboto Condensed', sans-serif;
+            div {
+                padding: 10px;
+                input[type=text], input[type=email] {
+                    width: $completo;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                input[type=submit], input[type=reset] {
+                    background-color:$bgBody;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 14pt;
+                    &:hover {
+                        background-color: $h1Head;
+                    }
+                }
+                textarea {
+                    width: $completo;
+                    height: 150px;
+                    padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #f8f8f8;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
+.preguntasFrecuentes {
+    padding: 50px 100px 50px 100px;
+    h2 {
+        text-align: center;
+        text-decoration:underline;
+    }
+    h3 {
+        padding: 30px 0;
+    }
+}

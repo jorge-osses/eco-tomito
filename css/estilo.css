@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  html body {
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    font-family: 'Poppins',sans-serif; }
+    html body p {
+      font-size: 1.5rem;
+      line-height: 2.5; }
+
+header {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: .8; }
+  header h1 {
+    text-transform: uppercase;
+    background-color: beige;
+    text-align: center;
+    color: #d16a78;
+    position: relative;
+    top: 50%;
+    font-family: "Dela Gothic One", cursive;
+    font-size: 6rem; }
+
+.menuNavegacion {
+  background-color: rgba(129, 177, 154, 0.9);
+  position: sticky;
+  top: 0; }
+  .menuNavegacion a {
+    color: #dc143c;
+    font-weight: bold;
+    font-size: 2rem; }
+    .menuNavegacion a:hover, .menuNavegacion a:focus {
+      background-color: #d16a78;
+      color: #0e1111;
+      border-radius: 30px; }
+    .menuNavegacion a .logo {
+      border: 1px solid;
+      padding: 5px;
+      border-radius: 50%;
+      width: 15vh; }
+  .menuNavegacion .iconotoggler {
+    border: 1px solid #2f303042;
+    border-radius: 30px; }
+
+.presentacion {
+  padding: 50px 100px 50px 100px; }
+  .presentacion h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px; }
+  .presentacion p {
+    margin-top: 10px;
+    text-align: justify; }
+
+.videoLoop {
+  width: 100%; }
+
+.informacion {
+  padding: 10px 100px 50px 100px; }
+  .informacion h2 {
+    text-decoration: underline;
+    padding: 20px 20px 20px 0px; }
+  .informacion #titular {
+    text-align: center;
+    padding: 30px; }
+  .informacion .cuidadoPrendas {
+    margin: 0; }
+    .informacion .cuidadoPrendas p, .informacion .cuidadoPrendas ul {
+      margin: 10px 0px 20px 0px;
+      list-style-position: inside; }
+      .informacion .cuidadoPrendas p li, .informacion .cuidadoPrendas ul li {
+        margin-left: 35px;
+        font-size: 10pt; }
+    .informacion .cuidadoPrendas strong {
+      font-size: 15pt; }
+
+#aside {
+  position: sticky;
+  top: 150px;
+  padding: 20px;
+  text-align: left;
+  color: black; }
+  #aside a {
+    text-decoration: none;
+    font-size: 19pt;
+    color: #d16a78; }
+    #aside a:hover, #aside a:focus {
+      background-color: #d16a78;
+      color: #0e1111;
+      border-radius: 30px; }
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  border-left: #d16a78 solid 3px; }
+  .productos h2 {
+    padding: 30px;
+    text-align: center; }
+  .productos div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px; }
+  .productos section {
+    width: 90%;
+    margin-top: 100px; }
+  .productos #pañalesDeTela div div img,
+  .productos #wetBag div div img,
+  .productos #calzonesDeTransicion div div img,
+  .productos #higieneFemenina div div img {
+    width: 180px;
+    height: auto;
+    border-radius: 50px; }
+  .productos #pañalesDeTela div div,
+  .productos #wetBag div div,
+  .productos #calzonesDeTransicion div div,
+  .productos #higieneFemenina div div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px 0; }
+    .productos #pañalesDeTela div div p,
+    .productos #wetBag div div p,
+    .productos #calzonesDeTransicion div div p,
+    .productos #higieneFemenina div div p {
+      letter-spacing: normal;
+      text-align: center; }
+
+.sobreMi {
+  padding: 10px 100px 50px 100px; }
+  .sobreMi h2 {
+    text-decoration: underline;
+    padding: 20px 20px 20px 0px; }
+  .sobreMi p {
+    margin: 10px 0px 20px 0px; }
+  .sobreMi img {
+    width: 20vw;
+    border-radius: 50%;
+    float: right; }
+
+.contenidoAside {
+  position: sticky;
+  top: 150px; }
+  .contenidoAside h4 {
+    text-align: center; }
+  .contenidoAside ul {
+    list-style-position: inside;
+    margin-top: 30px; }
+    .contenidoAside ul a {
+      text-decoration: none;
+      font-size: 19pt;
+      color: #d16a78;
+      font-size: 2rem; }
+
+.formularioContacto {
+  margin-top: 50px;
+  padding: 100px 100px 50px 100px;
+  font-size: 14pt;
+  font-family: 'Roboto Condensed', sans-serif; }
+  .formularioContacto fieldset {
+    border: 5px solid; }
+    .formularioContacto fieldset legend {
+      font-size: 24px;
+      text-align: center; }
+    .formularioContacto fieldset form {
+      font-family: 'Roboto Condensed', sans-serif; }
+      .formularioContacto fieldset form div {
+        padding: 10px; }
+        .formularioContacto fieldset form div input[type=text], .formularioContacto fieldset form div input[type=email] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box; }
+        .formularioContacto fieldset form div input[type=submit], .formularioContacto fieldset form div input[type=reset] {
+          background-color: #eec0c6;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 14pt; }
+          .formularioContacto fieldset form div input[type=submit]:hover, .formularioContacto fieldset form div input[type=reset]:hover {
+            background-color: #d16a78; }
+        .formularioContacto fieldset form div textarea {
+          width: 100%;
+          height: 150px;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          resize: none; }
+
+.preguntasFrecuentes {
+  padding: 50px 100px 50px 100px; }
+  .preguntasFrecuentes h2 {
+    text-align: center;
+    text-decoration: underline; }
+  .preguntasFrecuentes h3 {
+    padding: 30px 0; }
+
+.anima1, .anima2, .scalePhoto, .anima3, .bgAnimac {
+  transition: all 1s ease-in-out; }
+  .anima1:hover, .anima2:hover, .scalePhoto:hover, .anima3:hover, .bgAnimac:hover {
+    transform: rotate(360deg) scale(1.5, 1.5); }
+
+.anima2:hover {
+  transform: rotate(-360deg) scale(1.5, 1.5); }
+
+.scalePhoto:hover {
+  transform: scale(1.5, 1.5); }
+
+.anima3:hover, .bgAnimac:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #8b8b8b; }
+
+.bgAnimac:hover {
+  transform: scale(1.5, 1.5);
+  background-color: #d16a78; }
+
+.tituloAnimado {
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.textomodal {
+  line-height: normal;
+  letter-spacing: 1px;
+  word-spacing: .5px; }
+
+.footer {
+  background-color: #d16a78;
+  bottom: 0;
+  padding: 15px;
+  margin: 20px 0 0 0;
+  opacity: .7;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to right, #d16a78, #ffffff); }
+  .footer .boton {
+    padding: 0;
+    width: 100px;
+    background-color: #2f3030; }
+    .footer .boton a {
+      color: #ffffff;
+      text-decoration: none; }
+  .footer .redesSociales {
+    padding: 0; }
+    .footer .redesSociales a {
+      color: #8d8c86;
+      margin-left: 20px;
+      width: 30px; }
+      .footer .redesSociales a img {
+        width: 40px;
+        opacity: .7; }
+
+.footer-copyright {
+  background-color: #d16a78;
+  padding: 5px 0; }
+  .footer-copyright p {
+    margin: 2px 0 0;
+    letter-spacing: normal;
+    word-spacing: normal; }
+
+.error-404 {
+  display: none; }
+
+.error-404__main {
+  width: 100%;
+  height: 60vh; }
+  .error-404__main .error-404__main--titulo {
+    text-align: center;
+    font-size: 20vh;
+    padding: 50px; }
+  .error-404__main .error-404__main--contenido {
+    text-align: center;
+    font-size: 3vh; }

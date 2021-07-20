@@ -1,0 +1,53 @@
+.anima1 {
+    transition: all 1s ease-in-out;
+    &:hover {
+        transform: rotate(360deg) scale(1.5, 1.5);
+    }
+}
+.anima2 {
+    @extend .anima1;
+    &:hover {
+        transform: rotate(-360deg) scale(1.5, 1.5);
+    }
+}
+.scalePhoto {
+    @extend .anima1;
+    &:hover {
+        transform:scale(1.5, 1.5);
+    }
+}
+.anima3 {
+    @extend .anima1;
+    &:hover {
+        border-radius:$completo/2;
+        box-shadow: 0px 0px 15px 15px #8b8b8b;
+    }
+}
+.bgAnimac {
+    @extend .anima3;
+    &:hover {
+        transform: scale(1.5, 1.5);
+        background-color: #d16a78;
+    }
+}
+.tituloAnimado{
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+.textomodal {
+    line-height: normal;
+    letter-spacing: 1px;
+    word-spacing: .5px;
+}

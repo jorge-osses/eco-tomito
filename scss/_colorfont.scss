@@ -1,0 +1,57 @@
+$fontFamily1: 'Dela Gothic One', cursive;
+$fontFamily2: 'Roboto Condensed', sans-serif;
+
+$bgBody: #eec0c6;
+$bgBodyGrad: #7ee8fa;
+$h1Head: #d16a78;
+$bgNav: #81b19ae6;
+$textNav: #dc143c;
+$aHover: #0e1111;
+
+$headings:(
+    h1:6rem,
+    h2:4rem,
+    h3:2rem,
+    h4:1.5rem,
+    h5:1rem,
+);
+$sizeH1: map-get($headings, h1);
+$sizeNav: map-get($headings, h3);
+$sizeH5: map-get($headings, h5);
+$completo: 100%;
+
+@mixin flexible( $direction, $wrap, $justify){
+    display:flex;
+    flex-direction:$direction;
+    flex-wrap:$wrap;
+    justify-content:$justify;
+}
+
+@mixin aside() {
+    text-decoration: none;
+    font-size: 19pt;
+    color: $h1Head;
+}
+
+@mixin header{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .8;
+}
+@mixin sticky($static){
+    position:($static);
+    @if $static == sticky{
+        top: 150px;
+    }
+    @else {
+        top: 0;
+    }
+}
+
+$bg1:#d16a78;
+$bg2:#eec0c6;
+$bg3:#7ee8fa;
+

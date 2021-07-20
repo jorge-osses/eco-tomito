@@ -1,0 +1,13 @@
+header{
+    @include header;
+    h1 {
+        text-transform: uppercase;
+        background-color: beige;
+        text-align: center;
+        color: $h1Head;
+        position: relative;
+        top: $completo/2;
+        font-family: $fontFamily1;
+        font-size: $sizeH1;
+    }
+}

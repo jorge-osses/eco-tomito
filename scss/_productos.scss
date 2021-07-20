@@ -1,0 +1,51 @@
+#aside {
+    @include sticky(sticky);
+    padding: 20px;
+    text-align:left;
+    color: black;
+    a {
+        @include aside;
+        &:hover, &:focus {
+            background-color: $h1Head;
+            color: $aHover;
+            border-radius: 30px;
+        }
+    }
+}
+.productos{
+    @include flexible(row, wrap, center);
+    height: auto;
+    border-left: $h1Head solid 3px;
+    h2{
+        padding: 30px;
+        text-align: center;
+    }
+    div {
+        @include flexible(row, wrap, space-around);
+        padding-bottom: 30px;
+    }
+    section {
+        width: 90%;
+        margin-top: 100px;
+    }
+    #pañalesDeTela div div img, 
+    #wetBag div div img, 
+    #calzonesDeTransicion div div img, 
+    #higieneFemenina div div img{
+        width: 180px;
+        height: auto;
+        border-radius: 50px;
+    }
+    #pañalesDeTela div div, 
+    #wetBag div div, 
+    #calzonesDeTransicion div div, 
+    #higieneFemenina div div {
+        @include flexible(column, wrap, space-around);
+        align-items: center;
+        margin-top:30px 0;
+        p {
+           letter-spacing: normal; 
+           text-align: center;
+        }
+    }
+}
