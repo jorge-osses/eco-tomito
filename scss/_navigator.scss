@@ -1,0 +1,25 @@
+.menuNavegacion{
+    background-color: hsla(151, 24%, 60%, 0.9);
+    position: sticky;
+    top: 0;
+    a {
+        color: $textNav;
+        font-weight: bold;
+        font-size: $sizeNav;
+        &:hover, &:focus {
+            background-color: $h1Head;
+            color: $aHover;
+            border-radius: 30px;
+        }
+        .logo{
+            border: 1px solid;
+            padding: 5px;
+            border-radius: 50%;
+            width: 15vh;
+        }
+    }
+    .iconotoggler{
+        border: 1px solid #2f303042;
+        border-radius: 30px;
+    }
+}

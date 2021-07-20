@@ -1,0 +1,44 @@
+.footer{
+    background-color: #d16a78;
+    bottom:0;
+    padding:15px;
+    margin:20px 0 0 0;
+    opacity: .7;
+    width: $completo;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    background: linear-gradient(to right, #d16a78, #ffffff);
+    .boton {
+        padding: 0;
+        width: 100px;
+        background-color: #2f3030;
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    .redesSociales{
+        padding: 0;
+        a{
+            color: #8d8c86;
+            margin-left: 20px;
+            width: 30px;
+            img {
+                width:40px;
+                opacity: .7;
+            }
+        }
+        
+    }
+}
+.footer-copyright {
+    background-color: $h1Head;
+    padding: 5px 0;
+    p {
+        margin: 2px 0 0;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+}

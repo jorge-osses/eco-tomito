@@ -1,0 +1,16 @@
+.error-404 {
+    display: none;
+}
+.error-404__main {
+    width: $completo;
+    height: 60vh;
+    .error-404__main--titulo{
+        text-align: center;
+        font-size: 20vh;
+        padding: 50px;
+    }
+    .error-404__main--contenido {
+        text-align: center;
+        font-size: 3vh;
+    }
+}

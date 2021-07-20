@@ -1,0 +1,25 @@
+.informacion{
+    padding: 10px 100px 50px 100px;
+    h2 {
+        text-decoration:underline;
+        padding: 20px 20px 20px 0px;
+    }
+    #titular{
+        text-align: center;
+        padding: 30px;
+    }
+    .cuidadoPrendas{
+        margin: 0;
+        p, ul {
+            margin: 10px 0px 20px 0px;
+            list-style-position: inside;
+            li {
+                margin-left: 35px;
+                font-size: 10pt;
+            }
+        }
+        strong {
+            font-size: 15pt;
+        }
+    }
+}
