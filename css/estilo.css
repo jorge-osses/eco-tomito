@@ -87,7 +87,7 @@ header {
 #aside {
   position: sticky;
   top: 150px;
-  padding: 20px;
+  padding: 10%;
   text-align: left;
   color: black; }
   #aside a {
@@ -100,6 +100,7 @@ header {
       border-radius: 30px; }
 
 .productos {
+  padding: 1%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -152,7 +153,9 @@ header {
   .sobreMi img {
     width: 20vw;
     border-radius: 50%;
-    float: right; }
+    float: right;
+    box-shadow: 5px 5px 5px  grey;
+    opacity: .9; }
 
 .contenidoAside {
   position: sticky;
@@ -211,7 +214,7 @@ header {
           resize: none; }
 
 .preguntasFrecuentes {
-  padding: 50px 100px 50px 100px; }
+  padding: 10%; }
   .preguntasFrecuentes h2 {
     text-align: center;
     text-decoration: underline; }

@@ -1,6 +1,6 @@
 #aside {
     @include sticky(sticky);
-    padding: 20px;
+    padding: 10%;
     text-align:left;
     color: black;
     a {
@@ -13,6 +13,7 @@
     }
 }
 .productos{
+    padding: 1%;
     @include flexible(row, wrap, center);
     height: auto;
     border-left: $h1Head solid 3px;
