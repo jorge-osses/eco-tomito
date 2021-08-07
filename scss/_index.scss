@@ -10,6 +10,12 @@
         text-align: justify;
     }
 }
-.videoLoop {
-    width: $completo;
+.video-envivo{
+    width:90%;
+    .videoLoop {
+        width: $completo;
+        position: relative;
+        z-index: -100;
+        
+    }
 }

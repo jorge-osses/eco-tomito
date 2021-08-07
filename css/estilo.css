@@ -62,8 +62,12 @@ header {
     margin-top: 10px;
     text-align: justify; }
 
-.videoLoop {
-  width: 100%; }
+.video-envivo {
+  width: 90%; }
+  .video-envivo .videoLoop {
+    width: 100%;
+    position: relative;
+    z-index: -100; }
 
 .informacion {
   padding: 10%; }
