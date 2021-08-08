@@ -16,7 +16,7 @@ $headings:(
     h5:1rem,
 );
 $sizeH1: map-get($headings, h1);
-$sizeNav: map-get($headings, h3);
+$sizeNav: map-get($headings, h4);
 $sizeH5: map-get($headings, h5);
 $completo: 100%;
 

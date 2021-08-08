@@ -38,7 +38,7 @@ header {
   .menuNavegacion a {
     color: #dc143c;
     font-weight: bold;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
     .menuNavegacion a:hover, .menuNavegacion a:focus {
       background-color: #d16a78;
       color: #0e1111;
