@@ -11,19 +11,22 @@
 	justify-content: space-between;
     background: linear-gradient(to right, #d16a78, #ffffff);
     .boton {
-        padding: 0;
+        padding: 5px;
         width: 100px;
-        background-color: #2f3030;
         a {
             color: #ffffff;
             text-decoration: none;
         }
     }
     .redesSociales{
-        padding: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         a{
+            margin-left: 15px;
             color: #8d8c86;
-            margin-left: 20px;
             width: 30px;
             img {
                 width:40px;
@@ -41,4 +44,18 @@
         letter-spacing: normal;
         word-spacing: normal;
     }
+}
+@media only screen and (max-width: 390px) {
+    .redesSociales {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        a {
+            margin-left: 0;
+        }
+    }
+    html {
+        text-align: justify;
+    }
+    
 }
