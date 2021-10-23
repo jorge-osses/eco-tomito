@@ -12,7 +12,8 @@ if (!$_POST){
     $cuerpo = "Apellido: " . $_POST["apellido"] . "\r\n"; 
     $cuerpo .= "Email: " . $_POST["email"] . "\r\n";
     $cuerpo .= "Genero: " . $_POST["genero"] . "\r\n";
-	$cuerpo .= "Deja tu mensaje: " . $_POST["comentarios"] . "\r\n";
+	$cuerpo .= "Escribe tus comentarios: " . $_POST["comentarios"] . "\r\n";
+    $cuerpo .= "Recibir Newsletter" . $_POST["terminos"] . "\r\n";
 	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
 	// Si se agrega un campo al formulario, hay que agregarlo acá.
 
