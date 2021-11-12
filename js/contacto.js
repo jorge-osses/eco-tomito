@@ -23,7 +23,7 @@ divMensaje.setAttribute("id", "my-form-status");
                     status.remove();
                 },4000)
             }).catch(error => {
-                status.innerHTML = "Uups! Hay un problema para enviarlo"
+                status.innerHTML = "Uups! Hay un problema para enviarlo";
             });
         }
         form.addEventListener("submit", handleSubmit)
