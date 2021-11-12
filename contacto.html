@@ -85,10 +85,10 @@
             <section id="formularioContacto" class="formularioContacto">
                 <fieldset>
                     <legend>Formulario de Contacto</legend>
-                    <form action="envia.php" method="post">
+                    <form id="my-form" action="https://formspree.io/f/xnqlejrd" method="POST">
                         <div>
-                            <label for="nombre">Completa con tu nombre</label>
-                            <input type="text" name="nombre" placeholder="Introduce tu nombre">
+                            <label for="name">Completa con tu nombre</label>
+                            <input type="text" name="name" placeholder="Introduce tu nombre">
                         </div>
                         <div>
                             <label for="apellido">Completa con tu apellido</label>
@@ -99,12 +99,12 @@
                             <input type="email" name="email" required placeholder="Email">
                         </div>
                         
-                        <div>
+                        <!-- <div>
                             <label for="genero">Género</label>
                             <input type="radio" name="genero" value="mujer" id="">Mujer
                             <input type="radio" name="genero" value="hombre" id="">Hombre
                             <input type="radio" name="genero" value="sinDefinir" id="">ninguno
-                        </div>
+                        </div> -->
                         <div>
                             <label for="comentarios">Escribe tus comentarios: </label>
                             <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Deja aqui tu comentario..."></textarea>
@@ -117,7 +117,7 @@
     
     
                         <div>
-                            <input type="submit" value="enviar datos">
+                            <input id="my-form-button" type="submit" value="enviar datos">
                             <input type="reset" value="borrar campos">
                         </div>
                     </form>
@@ -151,6 +151,27 @@
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script>
+            var form = document.getElementById("my-form");
     
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    status.innerHTML = "Gracias por comunicarse!";
+                    form.reset()
+                }).catch(error => {
+                    status.innerHTML = "Uuos! Hay un problema para enviarlo"
+                });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
     </body>
 </html>
